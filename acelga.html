@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" href="logo/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="styles/barra_navegacao.css">
+  <link rel="stylesheet" href="styles/colunas.css">
+  <link rel="stylesheet" href="styles/slides.css">
+   <link rel="stylesheet" href="styles/form.css">
+
+	<meta charset="UTF-8">
+	<title>Natural da Terra</title>
+</head>
+<body>
+   
+   <a href="index.html"><img class="displayed" src="logo/logo.png"  alt="LOGOMARCA"></a>
+
+  <div class="navbar">
+  <div><a href="index.html">Home</a></div>
+  
+  <div class="dropdown">
+    <button class="dropbtn">Frutas</button>
+    <div class="dropdown-content">
+      <a href="longan.html">Longan</a>
+      <a href="pitaya.html">Pitaya</a>
+      <a href="roma.html">Romã</a>
+
+    </div>
+    </div> 
+  
+  <div class="dropdown" >
+  <button class="dropbtn">Legumes</button>
+  <div class="dropdown-content">
+  <a href="aspargo.html">Aspargo</a>
+  <a href="berinjela.html">Berinjela</a>
+  <a href="cebola.html">Cebola</a>
+  </div>
+
+</div>
+
+<div  class="dropdown" >
+  <button class="dropbtn">Verduras</button>
+  <div class="dropdown-content">
+  <a href="acelga.html">Acelga</a>
+  <a href="brocolis.html">Brocolis Romanesco</a>
+  <a href="rucula.html">Rúcula</a>
+  </div>
+
+</div>
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Fale Conosco</button>
+
+</div>
+
+  
+	<div class="row">
+  <div class="column">
+    <img src="imagens/acelga.jpg" alt="" style="width:100%">
+    <p><h1>Acelga</h1>A acelga ou beterraba branca é uma hortaliça que apresenta talos longos e firmes e folhas baças ou brilhantes, com coloração verde ou avermelhada. Contém quantidades consideráveis de niacina, vitamina A e vitamina C, além de ésteres do ácido oxálico, o que pode prejudicar a absorção de cálcio pelos ossos.</p>
+  </div>
+  <div class="column">
+    <img src="imagens/acelga2.jpg" alt="" style="width:100%">
+    <p><h1>Receita de Salada de Acelga</h1>Ingredientes:
+1 pé de acelga
+2 tomates maduros
+1/2 unidade de cebola picada
+2 chuchus
+2 colheres de sopa de azeite de oliva
+1 colher de sopa de suco de limão
+Sal a gosto
+Pimenta do reino a gosto
+</p>
+  </div>
+  <div class="column">
+    <img src="imagens/acelga3.jpg" alt="" style="width:100%">
+    <p><h1>Modo de preparo</h1>Lave os vegetais com água abundante.
+Corte a acelga em tiras e transfira para uma saladeira.
+Corte os tomates ao meio e retire as sementes. Corte em cubos e misture na saladeira,
+assim como a cebola em rodelas. Descasque os chuchus e ferva com água salgada até que fiquem macios,
+porém firmes. Corte os chuchus em cubinhos e incorpore na saladeira. Acrescente o azeite, o suco de limão,
+o sal e a pimenta e misture bem para pegar sabor. Sirva fresca.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <p>COPYRIGHT © 2019 NATURALDATERRA.COM.BR. TODOS OS DIREITOS RESERVADOS. NATURAL DA TERRA É UMA MARCA REGISTRADA DA NATURAL DA TERRA LTDA.</p>
+</div>
+
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="imagens/avatar.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Nome</b></label>
+      <input type="text" placeholder="Nome" name="uname" required>
+
+      <label for="text"><b>Email</b></label>
+      <input type="text" placeholder="Email" name="uname" required>
+        
+      <label for="text"><b>Mensagem</b></label><br>
+      <textarea rows="10" cols="214" type="text" placeholder="mensagem" name="uname" required> </textarea>
+
+
+      <button type="submit">Enviar</button>
+      
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+     
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>

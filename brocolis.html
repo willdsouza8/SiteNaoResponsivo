@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" href="logo/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="styles/barra_navegacao.css">
+  <link rel="stylesheet" href="styles/colunas.css">
+  <link rel="stylesheet" href="styles/slides.css">
+   <link rel="stylesheet" href="styles/form.css">
+
+	<meta charset="UTF-8">
+	<title>Natural da Terra</title>
+</head>
+<body>
+ 
+  <a href="index.html"><img class="displayed" src="logo/logo.png"  alt="LOGOMARCA"></a>
+  
+  <div class="navbar">
+  <div><a href="index.html">Home</a></div>
+  
+  <div class="dropdown">
+    <button class="dropbtn">Frutas</button>
+    <div class="dropdown-content">
+      <a href="longan.html">Longan</a>
+      <a href="pitaya.html">Pitaya</a>
+      <a href="roma.html">Romã</a>
+
+    </div>
+    </div> 
+  
+  <div class="dropdown" >
+  <button class="dropbtn">Legumes</button>
+  <div class="dropdown-content">
+  <a href="aspargo.html">Aspargo</a>
+  <a href="berinjela.html">Berinjela</a>
+  <a href="cebola.html">Cebola</a>
+  </div>
+
+</div>
+
+<div  class="dropdown" >
+  <button class="dropbtn">Verduras</button>
+  <div class="dropdown-content">
+  <a href="acelga.html">Acelga</a>
+  <a href="brocolis.html">Brocolis Romanesco</a>
+  <a href="rucula.html">Rúcula</a>
+  </div>
+
+</div>
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Fale Conosco</button>
+
+</div>
+
+  
+	<div class="row">
+  <div class="column">
+    <img src="imagens/brocoli.jpg" alt="" style="width:100%">
+    <p><h1>Brocolis Romanesco</h1>O romanesco é a inflorescência comestível da Brassica oleracea var. botrytis, uma variedade da espécie a que pertencem também a couve-flor, o brócolis, a couve, o repolho e a couve-de-bruxelas. É originário da Itália e mais precisamente de Roma. Também é considerada uma fonte de potássio, fósforo, magnésio e cálcio.</p>
+  </div>
+  <div class="column">
+    <img src="imagens/brocoli2.jpg" alt="" style="width:100%">
+    <p><h1>Receita de B. Romanesco na Manteiga</h1>Ingredientes:
+1 maço de brócolis romanesco
+2 colheres (sopa) de manteiga
+Sal
+</p>
+  </div>
+  <div class="column">
+    <img src="imagens/brocoli3.jpg" alt="" style="width:100%">
+    <p><h1>Modo de preparo</h1>Lave o maço de brócolis romanesco em água corrente. Separe os buquês. Reserve.
+Em um saco plástico próprio para congelador/microondas, coloque os buquês de brócolis.
+Dê um nó na extremidade e fure o saquinho diversas vezes com o auxílio de um palito de dente.
+Leve ao microondas, na potência máxima, por 5 a 7 minutos. O ponto ideal é “al dente”.
+Abra o saco plástico com cuidado por causa do vapor. 
+Enquanto isso, derreta a manteiga em uma panela e acrescente o brócolis. Deixe apurar por 3 a 4 minutos. Acerte o sal.
+</p>
+  </div>
+</div>
+
+<div class="footer">
+  <p>COPYRIGHT © 2019 NATURALDATERRA.COM.BR. TODOS OS DIREITOS RESERVADOS. NATURAL DA TERRA É UMA MARCA REGISTRADA DA NATURAL DA TERRA LTDA.</p>
+</div>
+
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="imagens/avatar.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Nome</b></label>
+      <input type="text" placeholder="Nome" name="uname" required>
+
+      <label for="text"><b>Email</b></label>
+      <input type="text" placeholder="Email" name="uname" required>
+        
+      <label for="text"><b>Mensagem</b></label><br>
+      <textarea rows="10" cols="214" type="text" placeholder="mensagem" name="uname" required> </textarea>
+
+
+      <button type="submit">Enviar</button>
+      
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+     
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>

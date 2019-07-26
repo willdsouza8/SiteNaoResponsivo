@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+
+}
+
+.row {
+  display: flex;
+  color: white;
+  white-space: pre-line;
+
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 5px;
+  background-color: #333;
+	margin-top: -5px;
+
+}
+h1{
+	color:#FFCA4B;
+}

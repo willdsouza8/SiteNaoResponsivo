@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <link rel="shortcut icon" href="logo/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="styles/barra_navegacao.css">
+	<link rel="stylesheet" href="styles/slides.css">
+   <link rel="stylesheet" href="styles/form.css">
+	<meta charset="UTF-8">
+	<title>Natural da Terra</title>
+</head>
+<body>
+	
+  <a href="index.html"><img class="displayed" src="logo/logo.png"  alt="LOGOMARCA"></a>
+  
+	
+
+	<div class="navbar">
+  <div><a href="index.html">Home</a></div>
+  
+  <div class="dropdown">
+    <button class="dropbtn">Frutas</button>
+    <div class="dropdown-content">
+      <a href="longan.html">Longan</a>
+      <a href="pitaya.html">Pitaya</a>
+      <a href="roma.html">Romã</a>
+
+    </div>
+    </div> 
+  
+  <div class="dropdown" >
+  <button class="dropbtn">Legumes</button>
+  <div class="dropdown-content">
+  <a href="aspargo.html">Aspargo</a>
+  <a href="berinjela.html">Berinjela</a>
+  <a href="cebola.html">Cebola</a>
+  </div>
+
+</div>
+
+<div  class="dropdown" >
+  <button class="dropbtn">Verduras</button>
+  <div class="dropdown-content">
+  <a href="acelga.html">Acelga</a>
+  <a href="brocolis.html">Brocolis Romanesco</a>
+  <a href="rucula.html">Rúcula</a>
+  </div>
+
+</div>
+ <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Fale Conosco</button>
+</div>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="imagens/1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="imagens/2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="imagens/3.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="imagens/4.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="imagens/5.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="imagens/6.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="imagens/1.jpg" style="width:100%" onclick="currentSlide(1)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="imagens/2.jpg" style="width:100%" onclick="currentSlide(2)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="imagens/3.jpg" style="width:100%" onclick="currentSlide(3)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="imagens/4.jpg" style="width:100%" onclick="currentSlide(4)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="imagens/5.jpg" style="width:100%" onclick="currentSlide(5)">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="imagens/6.jpg" style="width:100%" onclick="currentSlide(6)">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<div class="footer">
+  <p>COPYRIGHT © 2019 NATURALDATERRA.COM.BR. TODOS OS DIREITOS RESERVADOS. NATURAL DA TERRA É UMA MARCA REGISTRADA DA NATURAL DA TERRA LTDA.</p>
+</div>
+
+<!-- ID FALE CONOSCO /-->
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="imagens/avatar.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Nome</b></label>
+      <input type="text" placeholder="Nome" name="uname" required>
+
+      <label for="text"><b>Email</b></label>
+      <input type="text" placeholder="Email" name="uname" required>
+        
+      <label for="text"><b>Mensagem</b></label><br>
+      <textarea rows="10" cols="214" type="text" placeholder="mensagem" name="uname" required> </textarea>
+
+
+      <button type="submit">Enviar</button>
+      
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+     
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
